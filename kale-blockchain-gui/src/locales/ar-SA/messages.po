@@ -47,9 +47,9 @@ msgstr "موافقة"
 msgid "Accepted at time:"
 msgstr "تم القبول في الوقت:"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:69
 #: src/components/plot/PlotsFailed.tsx:14
 #: src/components/plot/PlotsNotFound.tsx:14
-#: src/components/plot/overview/PlotOverviewPlots.tsx:69
 msgid "Action"
 msgstr "إجراء"
 
@@ -76,9 +76,9 @@ msgid "Add Wallet"
 msgstr "إضافة محفظة"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:35
-#: src/components/plot/PlotHeader.tsx:33
 #: src/components/plot/add/PlotAdd.tsx:55
 #: src/components/plot/overview/PlotOverviewHero.tsx:29
+#: src/components/plot/PlotHeader.tsx:33
 msgid "Add a Plot"
 msgstr "إضافة مساحة"
 
@@ -103,10 +103,10 @@ msgstr "العنوان / العنوان المشفر"
 
 #: src/components/trading/CreateOffer.jsx:213
 #: src/components/trading/TradesTable.tsx:16
-#: src/components/wallet/WalletHistory.tsx:49
 #: src/components/wallet/create/createNewColouredCoin.jsx:125
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:770
 #: src/components/wallet/standard/WalletStandard.tsx:333
+#: src/components/wallet/WalletHistory.tsx:49
 msgid "Amount"
 msgstr "المبلغ"
 
@@ -582,10 +582,10 @@ msgstr "تعديل"
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Kale wallet."
 msgstr "أدخل الـ 24 كلمة التي قمت بحفظها من أجل استعادة محفظة Kale الخاصة بك."
 
-#: src/components/farm/FarmerStatus.tsx:30
-#: src/components/farm/FarmerStatus.tsx:31
 #: src/components/farm/card/FarmCardStatus.tsx:20
 #: src/components/farm/card/FarmCardStatus.tsx:25
+#: src/components/farm/FarmerStatus.tsx:30
+#: src/components/farm/FarmerStatus.tsx:31
 #: src/components/plot/PlotStatus.tsx:17
 #: src/components/plot/PlotStatus.tsx:18
 #: src/components/plot/queue/PlotQueueIndicator.tsx:12
@@ -650,9 +650,9 @@ msgstr "المزارع لا يعمل"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "يحصل المزارعون على مكافآت مربعات ورسوم معاملة من خلال تخصيص مساحة احتياطية للشبكة للمساعدة في تأمين المعاملات. هذا هو المكان الذي ستكون فيه مزرعتك بمجرد إضافة قطعة. <0>عرض المزيد</0>"
 
+#: src/components/farm/card/FarmCardStatus.tsx:29
 #: src/components/farm/Farm.tsx:15
 #: src/components/farm/FarmerStatus.tsx:27
-#: src/components/farm/card/FarmCardStatus.tsx:29
 #: src/components/plot/PlotStatus.tsx:14
 msgid "Farming"
 msgstr "المزرعة"
@@ -665,13 +665,13 @@ msgstr "المزرعة"
 msgid "Farming Status"
 msgstr "حالة المزرعة"
 
-#: src/components/wallet/WalletHistory.tsx:53
 #: src/components/wallet/create/createExistingColouredCoin.jsx:131
 #: src/components/wallet/create/createNewColouredCoin.jsx:138
 #: src/components/wallet/create/createRLAdmin.jsx:266
 #: src/components/wallet/create/createRLAdmin.jsx:298
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:783
 #: src/components/wallet/standard/WalletStandard.tsx:338
+#: src/components/wallet/WalletHistory.tsx:53
 msgid "Fee"
 msgstr "الرسوم"
 
@@ -700,9 +700,9 @@ msgstr "قيمة الرسوم"
 msgid "File"
 msgstr "الملف"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:61
 #: src/components/plot/PlotsFailed.tsx:10
 #: src/components/plot/PlotsNotFound.tsx:10
-#: src/components/plot/overview/PlotOverviewPlots.tsx:61
 msgid "Filename"
 msgstr "اسم الملف"
 
@@ -1015,9 +1015,9 @@ msgstr "الرمز التعريفي للشبكة"
 msgid "None of your plots have passed the plot filter yet."
 msgstr "لم تمر أي من قطعة خاصة بك بمرشح القطع حتى الآن."
 
-#: src/components/farm/FarmerStatus.tsx:29
 #: src/components/farm/card/FarmCardNotAvailable.tsx:8
 #: src/components/farm/card/FarmCardNotAvailable.tsx:9
+#: src/components/farm/FarmerStatus.tsx:29
 #: src/components/plot/PlotStatus.tsx:16
 msgid "Not Available"
 msgstr "غير متاح"
@@ -1558,8 +1558,8 @@ msgstr "الحالة"
 #: src/components/plot/overview/PlotOverviewPlots.tsx:65
 #: src/components/trading/TradingOverview.jsx:128
 #: src/components/wallet/WalletHistory.tsx:43
-#: src/components/wallet/WalletStatusCard.tsx:12
 #: src/components/wallet/Wallets.tsx:95
+#: src/components/wallet/WalletStatusCard.tsx:12
 msgid "Status"
 msgstr "الحالة"
 
@@ -1603,8 +1603,8 @@ msgstr "إرسال"
 msgid "Synced"
 msgstr "تمت المزامنة"
 
-#: src/components/farm/FarmerStatus.tsx:28
 #: src/components/farm/card/FarmCardStatus.tsx:12
+#: src/components/farm/FarmerStatus.tsx:28
 #: src/components/plot/PlotStatus.tsx:15
 msgid "Syncing"
 msgstr "جاري المزامنة"
@@ -2023,13 +2023,13 @@ msgstr "[خطأ 13] تم رفض الإذن. أنت تحاول الوصول إل�
 msgid "[Error 22] File not found. Most likely one of the plot folders in your config.yaml has an issue."
 msgstr "[خطأ 22] لم يتم العثور على الملف. على الأرجح أن أحد مجلدات المخطط في config.yaml لديه مشكلة."
 
-#: src/components/wallet/WalletStatusCard.tsx:31
 #: src/components/wallet/Wallets.tsx:121
+#: src/components/wallet/WalletStatusCard.tsx:31
 msgid "connections:"
 msgstr "الإتصالات:"
 
-#: src/components/wallet/WalletStatusCard.tsx:25
 #: src/components/wallet/Wallets.tsx:115
+#: src/components/wallet/WalletStatusCard.tsx:25
 msgid "height:"
 msgstr "ارتفاع:"
 
@@ -2037,18 +2037,18 @@ msgstr "ارتفاع:"
 msgid "not synced"
 msgstr "لم تتم المزامنة"
 
-#: src/components/wallet/WalletStatusCard.tsx:17
 #: src/components/wallet/Wallets.tsx:100
+#: src/components/wallet/WalletStatusCard.tsx:17
 msgid "status:"
 msgstr "الحالة"
 
-#: src/components/wallet/WalletStatusCard.tsx:20
 #: src/components/wallet/Wallets.tsx:107
+#: src/components/wallet/WalletStatusCard.tsx:20
 msgid "synced"
 msgstr "تمت المزامنة"
 
-#: src/components/wallet/WalletStatusCard.tsx:20
 #: src/components/wallet/Wallets.tsx:105
+#: src/components/wallet/WalletStatusCard.tsx:20
 msgid "syncing"
 msgstr "جاري المزامنة"
 
@@ -2064,6 +2064,7 @@ msgstr "جاري المزامنة"
 msgid "{currencyCode} Block Rewards"
 msgstr "جوائز حظر {currencyCode}"
 
+#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:17
 #: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:17
 msgid "{currencyCode} Total Kale Farmed"
 msgstr "{currencyCode} مجموع مزارع شيا"
