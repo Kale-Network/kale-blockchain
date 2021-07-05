@@ -75,7 +75,7 @@ def configure(
     if testnet is not None:
         if testnet == "true" or testnet == "t":
             print("Setting Testnet")
-            testnet_port = "56333"
+            testnet_port = "6333"
             testnet_introducer = "beta1_introducer.kalenetwork.org"
             testnet = "testnet7"
             config["full_node"]["port"] = int(testnet_port)

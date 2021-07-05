@@ -19,7 +19,7 @@ testnet_kwargs = {
     "SIGNIFICANT_BITS": 8,  # The number of bits to look at in difficulty and min iters. The rest are zeroed
     "DISCRIMINANT_SIZE_BITS": 1024,  # Max is 1024 (based on ClassGroupElement int size)
     "NUMBER_ZERO_BITS_PLOT_FILTER": 9,  # H(plot signature of the challenge) must start with these many zeroes
-    "MIN_PLOT_SIZE": 32,  # 32 for mainnet
+    "MIN_PLOT_SIZE": 25, #32,  # 32 for mainnet
     "MAX_PLOT_SIZE": 50,
     "SUB_SLOT_TIME_TARGET": 600,  # The target number of seconds per slot, mainnet 600
     "NUM_SP_INTERVALS_EXTRA": 3,  # The number of sp intervals to add to the signage point
@@ -28,14 +28,14 @@ testnet_kwargs = {
     # Used as the initial cc rc challenges, as well as first block back pointers, and first SES back pointer
     # We override this value based on the chain being run (testnet0, testnet1, mainnet, etc)
     # Default used for tests is std_hash(b'')
-    "GENESIS_CHALLENGE": bytes.fromhex("e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"),
-    # Forks of kale should change this value to provide replay attack protection. This is set to mainnet genesis chall
-    "AGG_SIG_ME_ADDITIONAL_DATA": bytes.fromhex("ccd5bb71183532bff220ba46c268991a3ff07eb358e8255a65c30a2dce0e5fbb"),
+    "GENESIS_CHALLENGE": bytes.fromhex("4adf0fe70cfbd24286695e105624a92e44c083eca84ee2906106e51566f5ae4d"),
+    # Forks of chia should change this value to provide replay attack protection. This is set to mainnet genesis call
+    "AGG_SIG_ME_ADDITIONAL_DATA": bytes.fromhex("9248f1109f8f5b99d77b39e7e50ed2491848baf30d2837857561c599ef9b74cb"),
     "GENESIS_PRE_FARM_POOL_PUZZLE_HASH": bytes.fromhex(
-        "d23da14695a188ae5708dd152263c4db883eb27edeb936178d4d988b8f3ce5fc"
+        "784685261df3983f624e3696488a5df7c5d155fc8786949e27647a8e116ad2d9"
     ),
     "GENESIS_PRE_FARM_FARMER_PUZZLE_HASH": bytes.fromhex(
-        "3d8765d3a597ec1d99663f6c9816d915b9f68613ac94009884c4addaefcce6af"
+        "784685261df3983f624e3696488a5df7c5d155fc8786949e27647a8e116ad2d9"
     ),
     "MAX_VDF_WITNESS_SIZE": 64,
     # Size of mempool = 50x the size of block

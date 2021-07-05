@@ -141,7 +141,7 @@ class WSKaleConnection:
             inbound_handshake = Handshake.from_bytes(message.data)
             if ProtocolMessageTypes(message.type) != ProtocolMessageTypes.handshake:
                 raise ProtocolError(Err.INVALID_HANDSHAKE)
-            if inbound_handshake.network_id != network_id:
+            if inbound_handshake.network_id != 'kale-' + network_id:
                 raise ProtocolError(Err.INCOMPATIBLE_NETWORK_ID)
             outbound_handshake = make_msg(
                 ProtocolMessageTypes.handshake,

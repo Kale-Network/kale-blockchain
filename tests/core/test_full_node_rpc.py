@@ -1,17 +1,17 @@
 import pytest
 from blspy import AugSchemeMPL
 
-from chia.consensus.pot_iterations import is_overflow_block
-from chia.protocols import full_node_protocol
-from chia.rpc.full_node_rpc_api import FullNodeRpcApi
-from chia.rpc.full_node_rpc_client import FullNodeRpcClient
-from chia.rpc.rpc_server import start_rpc_server
-from chia.simulator.simulator_protocol import FarmNewBlockProtocol
-from chia.types.spend_bundle import SpendBundle
-from chia.types.unfinished_block import UnfinishedBlock
-from chia.util.hash import std_hash
-from chia.util.ints import uint16
-from chia.util.wallet_tools import WalletTool
+from kale.consensus.pot_iterations import is_overflow_block
+from kale.protocols import full_node_protocol
+from kale.rpc.full_node_rpc_api import FullNodeRpcApi
+from kale.rpc.full_node_rpc_client import FullNodeRpcClient
+from kale.rpc.rpc_server import start_rpc_server
+from kale.simulator.simulator_protocol import FarmNewBlockProtocol
+from kale.types.spend_bundle import SpendBundle
+from kale.types.unfinished_block import UnfinishedBlock
+from kale.util.hash import std_hash
+from kale.util.ints import uint16
+from kale.util.wallet_tools import WalletTool
 from tests.setup_nodes import bt, self_hostname, setup_simulators_and_wallets, test_constants
 from tests.time_out_assert import time_out_assert
 

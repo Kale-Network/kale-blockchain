@@ -5,25 +5,25 @@ from typing import Dict, List
 
 import pytest
 
-from chia.full_node.mempool import Mempool
-from chia.protocols import full_node_protocol
-from chia.simulator.simulator_protocol import FarmNewBlockProtocol
-from chia.types.announcement import Announcement
-from chia.types.blockchain_format.coin import Coin
-from chia.types.coin_solution import CoinSolution
-from chia.types.condition_opcodes import ConditionOpcode
-from chia.types.condition_with_args import ConditionWithArgs
-from chia.types.spend_bundle import SpendBundle
-from chia.util.clvm import int_to_bytes
-from chia.util.condition_tools import conditions_for_solution
-from chia.util.errors import Err
-from chia.util.ints import uint64
+from kale.full_node.mempool import Mempool
+from kale.protocols import full_node_protocol
+from kale.simulator.simulator_protocol import FarmNewBlockProtocol
+from kale.types.announcement import Announcement
+from kale.types.blockchain_format.coin import Coin
+from kale.types.coin_solution import CoinSolution
+from kale.types.condition_opcodes import ConditionOpcode
+from kale.types.condition_with_args import ConditionWithArgs
+from kale.types.spend_bundle import SpendBundle
+from kale.util.clvm import int_to_bytes
+from kale.util.condition_tools import conditions_for_solution
+from kale.util.errors import Err
+from kale.util.ints import uint64
 
 from tests.connection_utils import connect_and_get_peer
 from tests.core.node_height import node_height_at_least
 from tests.setup_nodes import bt, setup_simulators_and_wallets
 from tests.time_out_assert import time_out_assert
-from chia.types.blockchain_format.program import Program, INFINITE_COST
+from kale.types.blockchain_format.program import Program, INFINITE_COST
 
 BURN_PUZZLE_HASH = b"0" * 32
 BURN_PUZZLE_HASH_2 = b"1" * 32
