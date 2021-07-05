@@ -19,8 +19,8 @@ msgstr ""
 "X-Crowdin-File-ID: 72\n"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:39
-msgid "*Want to explore Kale’s blocks further? Check out <0>Kale Explorer</0> built by an open source developer."
-msgstr "Wil je Kale verder verkennen? Kijk dan zeker even naar <0>Kale Explorer</0> dat werd gemaakt door een open-source ontwikkelaar."
+#~ msgid "*Want to explore Kale’s blocks further? Check out <0>Kale Explorer</0> built by an open source developer."
+#~ msgstr "Wil je Kale verder verkennen? Kijk dan zeker even naar <0>Kale Explorer</0> dat werd gemaakt door een open-source ontwikkelaar."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:94
 #~ msgid "0 automatically chooses bucket count"
@@ -266,18 +266,6 @@ msgstr "Te vinden Hash"
 #: src/electron/main.tsx:345
 msgid "Chat on KeyBase"
 msgstr "Chat op KeyBase"
-
-#: src/electron/main.tsx:362
-msgid "Kale"
-msgstr "Kale"
-
-#: src/electron/main.tsx:312
-msgid "Kale Blockchain Wiki"
-msgstr "Kale Blockchain Wiki"
-
-#: src/components/wallet/Wallets.tsx:32
-msgid "Kale Wallet"
-msgstr "Kale Portemonnee"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:13
 msgid "Choose Number of Plots"
@@ -855,6 +843,18 @@ msgstr "Interval"
 #: src/components/plot/overview/PlotOverviewPlots.tsx:37
 msgid "K-Size"
 msgstr "K-grootte"
+
+#: src/electron/main.tsx:362
+msgid "Kale"
+msgstr "Kale"
+
+#: src/electron/main.tsx:312
+msgid "Kale Blockchain Wiki"
+msgstr "Kale Blockchain Wiki"
+
+#: src/components/wallet/Wallets.tsx:32
+msgid "Kale Wallet"
+msgstr "Kale Portemonnee"
 
 #: src/components/dashboard/DashboardSideBar.tsx:27
 msgid "Keys"
@@ -1770,13 +1770,13 @@ msgstr "Aan"
 msgid "Total Balance"
 msgstr "Totaal saldo"
 
-#: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:15
-#~ msgid "Total Kale Farmed"
-#~ msgstr ""
-
 #: src/components/fullNode/FullNode.jsx:192
 msgid "Total Iterations"
 msgstr "Totaal # Iteraties"
+
+#: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:15
+#~ msgid "Total Kale Farmed"
+#~ msgstr ""
 
 #: src/components/farm/card/FarmCardTotalNetworkSpace.tsx:8
 msgid "Total Network Space"
@@ -1900,12 +1900,12 @@ msgstr "Wachten op synchronisatie"
 #~ msgid "WalletItem.ccWallet"
 #~ msgstr ""
 
-#: src/components/wallet/Wallets.tsx:30
-#~ msgid "WalletItem.kaleWallet"
-#~ msgstr ""
-
 #: src/components/wallet/Wallets.tsx:48
 #~ msgid "WalletItem.didWallet"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:30
+#~ msgid "WalletItem.kaleWallet"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:41

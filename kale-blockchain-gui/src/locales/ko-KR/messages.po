@@ -19,8 +19,8 @@ msgstr ""
 "X-Crowdin-File-ID: 72\n"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:39
-msgid "*Want to explore Kale’s blocks further? Check out <0>Kale Explorer</0> built by an open source developer."
-msgstr "Kale의 블록을 더 탐험하고 싶으십니까? 오픈 소스 개발자가 만든 <0>Kale Explorer</0>를 확인하세요."
+#~ msgid "*Want to explore Kale’s blocks further? Check out <0>Kale Explorer</0> built by an open source developer."
+#~ msgstr "Kale의 블록을 더 탐험하고 싶으십니까? 오픈 소스 개발자가 만든 <0>Kale Explorer</0>를 확인하세요."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:94
 #~ msgid "0 automatically chooses bucket count"
@@ -266,18 +266,6 @@ msgstr "도전 해시"
 #: src/electron/main.tsx:345
 msgid "Chat on KeyBase"
 msgstr "키베이스에서 채팅하기"
-
-#: src/electron/main.tsx:362
-msgid "Kale"
-msgstr "치아"
-
-#: src/electron/main.tsx:312
-msgid "Kale Blockchain Wiki"
-msgstr "치아 블록체인 위키"
-
-#: src/components/wallet/Wallets.tsx:32
-msgid "Kale Wallet"
-msgstr "치아 지갑"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:13
 msgid "Choose Number of Plots"
@@ -855,6 +843,18 @@ msgstr "간격"
 #: src/components/plot/overview/PlotOverviewPlots.tsx:37
 msgid "K-Size"
 msgstr "K-크기"
+
+#: src/electron/main.tsx:362
+msgid "Kale"
+msgstr "치아"
+
+#: src/electron/main.tsx:312
+msgid "Kale Blockchain Wiki"
+msgstr "치아 블록체인 위키"
+
+#: src/components/wallet/Wallets.tsx:32
+msgid "Kale Wallet"
+msgstr "치아 지갑"
 
 #: src/components/dashboard/DashboardSideBar.tsx:27
 msgid "Keys"
@@ -1770,13 +1770,13 @@ msgstr "수신"
 msgid "Total Balance"
 msgstr "총 잔고"
 
-#: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:15
-#~ msgid "Total Kale Farmed"
-#~ msgstr ""
-
 #: src/components/fullNode/FullNode.jsx:192
 msgid "Total Iterations"
 msgstr "총 반복"
+
+#: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:15
+#~ msgid "Total Kale Farmed"
+#~ msgstr ""
 
 #: src/components/farm/card/FarmCardTotalNetworkSpace.tsx:8
 msgid "Total Network Space"
@@ -1900,12 +1900,12 @@ msgstr "동기화 대기 중"
 #~ msgid "WalletItem.ccWallet"
 #~ msgstr ""
 
-#: src/components/wallet/Wallets.tsx:30
-#~ msgid "WalletItem.kaleWallet"
-#~ msgstr ""
-
 #: src/components/wallet/Wallets.tsx:48
 #~ msgid "WalletItem.didWallet"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:30
+#~ msgid "WalletItem.kaleWallet"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:41
