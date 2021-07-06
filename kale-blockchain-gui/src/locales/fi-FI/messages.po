@@ -47,9 +47,9 @@ msgstr "Hyväksy"
 msgid "Accepted at time:"
 msgstr "Hyväksyntä ajankohta:"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:69
 #: src/components/plot/PlotsFailed.tsx:14
 #: src/components/plot/PlotsNotFound.tsx:14
-#: src/components/plot/overview/PlotOverviewPlots.tsx:69
 msgid "Action"
 msgstr "Toiminto"
 
@@ -76,9 +76,9 @@ msgid "Add Wallet"
 msgstr "Lisää Lompakko"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:35
-#: src/components/plot/PlotHeader.tsx:33
 #: src/components/plot/add/PlotAdd.tsx:55
 #: src/components/plot/overview/PlotOverviewHero.tsx:29
+#: src/components/plot/PlotHeader.tsx:33
 msgid "Add a Plot"
 msgstr "Lisää uusi farmi"
 
@@ -103,10 +103,10 @@ msgstr "Osoite / Puzzle-tiiviste"
 
 #: src/components/trading/CreateOffer.jsx:213
 #: src/components/trading/TradesTable.tsx:16
-#: src/components/wallet/WalletHistory.tsx:49
 #: src/components/wallet/create/createNewColouredCoin.jsx:125
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:770
 #: src/components/wallet/standard/WalletStandard.tsx:333
+#: src/components/wallet/WalletHistory.tsx:49
 msgid "Amount"
 msgstr "Määrä"
 
@@ -582,10 +582,10 @@ msgstr "Muokkaa"
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Kale wallet."
 msgstr "Anna tallentamasi 24 muistisanaa palauttaaksesi Kale-lompakon."
 
-#: src/components/farm/FarmerStatus.tsx:30
-#: src/components/farm/FarmerStatus.tsx:31
 #: src/components/farm/card/FarmCardStatus.tsx:20
 #: src/components/farm/card/FarmCardStatus.tsx:25
+#: src/components/farm/FarmerStatus.tsx:30
+#: src/components/farm/FarmerStatus.tsx:31
 #: src/components/plot/PlotStatus.tsx:17
 #: src/components/plot/PlotStatus.tsx:18
 #: src/components/plot/queue/PlotQueueIndicator.tsx:12
@@ -650,9 +650,9 @@ msgstr "Farmari ei ole käynnissä"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Farmarit ansaitsevat lohkopalkkioita ja transaktioveloituksia varaamalla levytilaa vertaisverkolle ja vahvistamalla transaktioita. Farmisi näkyy täällä luotuasi plot-tiedoston. <0>Katso lisää</0>"
 
+#: src/components/farm/card/FarmCardStatus.tsx:29
 #: src/components/farm/Farm.tsx:15
 #: src/components/farm/FarmerStatus.tsx:27
-#: src/components/farm/card/FarmCardStatus.tsx:29
 #: src/components/plot/PlotStatus.tsx:14
 msgid "Farming"
 msgstr "Tuotetaan Farmissa"
@@ -665,13 +665,13 @@ msgstr "Tuotetaan Farmissa"
 msgid "Farming Status"
 msgstr "Farmituotannon Tila"
 
-#: src/components/wallet/WalletHistory.tsx:53
 #: src/components/wallet/create/createExistingColouredCoin.jsx:131
 #: src/components/wallet/create/createNewColouredCoin.jsx:138
 #: src/components/wallet/create/createRLAdmin.jsx:266
 #: src/components/wallet/create/createRLAdmin.jsx:298
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:783
 #: src/components/wallet/standard/WalletStandard.tsx:338
+#: src/components/wallet/WalletHistory.tsx:53
 msgid "Fee"
 msgstr "Veloitus"
 
@@ -700,9 +700,9 @@ msgstr "Palkkiosumma"
 msgid "File"
 msgstr "Tiedosto"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:61
 #: src/components/plot/PlotsFailed.tsx:10
 #: src/components/plot/PlotsNotFound.tsx:10
-#: src/components/plot/overview/PlotOverviewPlots.tsx:61
 msgid "Filename"
 msgstr "Tiedoston nimi"
 
@@ -1015,9 +1015,9 @@ msgstr "Noodin tunnus"
 msgid "None of your plots have passed the plot filter yet."
 msgstr "Yksikään ploteistasi ei ole vielä päässyt suodatuksesta läpi."
 
-#: src/components/farm/FarmerStatus.tsx:29
 #: src/components/farm/card/FarmCardNotAvailable.tsx:8
 #: src/components/farm/card/FarmCardNotAvailable.tsx:9
+#: src/components/farm/FarmerStatus.tsx:29
 #: src/components/plot/PlotStatus.tsx:16
 msgid "Not Available"
 msgstr "Ei Saatavilla"
@@ -1558,8 +1558,8 @@ msgstr "Tila"
 #: src/components/plot/overview/PlotOverviewPlots.tsx:65
 #: src/components/trading/TradingOverview.jsx:128
 #: src/components/wallet/WalletHistory.tsx:43
-#: src/components/wallet/WalletStatusCard.tsx:12
 #: src/components/wallet/Wallets.tsx:95
+#: src/components/wallet/WalletStatusCard.tsx:12
 msgid "Status"
 msgstr "Tila"
 
@@ -1603,8 +1603,8 @@ msgstr "Lähetä"
 msgid "Synced"
 msgstr "Synkrononissa"
 
-#: src/components/farm/FarmerStatus.tsx:28
 #: src/components/farm/card/FarmCardStatus.tsx:12
+#: src/components/farm/FarmerStatus.tsx:28
 #: src/components/plot/PlotStatus.tsx:15
 msgid "Syncing"
 msgstr "Synkronoi...."
@@ -2023,13 +2023,13 @@ msgstr "[Virhe 13] Lupa evätty. Yrität käyttää tiedostoa / hakemistoa ilman
 msgid "[Error 22] File not found. Most likely one of the plot folders in your config.yaml has an issue."
 msgstr "[Virhe 22] Tiedostoa ei löydy. Todennäköisesti yhdessä config.yaml-tiedostosi juontikansioista on ongelma."
 
-#: src/components/wallet/WalletStatusCard.tsx:31
 #: src/components/wallet/Wallets.tsx:121
+#: src/components/wallet/WalletStatusCard.tsx:31
 msgid "connections:"
 msgstr "yhteydet:"
 
-#: src/components/wallet/WalletStatusCard.tsx:25
 #: src/components/wallet/Wallets.tsx:115
+#: src/components/wallet/WalletStatusCard.tsx:25
 msgid "height:"
 msgstr "korkeus:"
 
@@ -2037,18 +2037,18 @@ msgstr "korkeus:"
 msgid "not synced"
 msgstr "ei synkronoitu"
 
-#: src/components/wallet/WalletStatusCard.tsx:17
 #: src/components/wallet/Wallets.tsx:100
+#: src/components/wallet/WalletStatusCard.tsx:17
 msgid "status:"
 msgstr "tila:"
 
-#: src/components/wallet/WalletStatusCard.tsx:20
 #: src/components/wallet/Wallets.tsx:107
+#: src/components/wallet/WalletStatusCard.tsx:20
 msgid "synced"
 msgstr "synkronoitu"
 
-#: src/components/wallet/WalletStatusCard.tsx:20
 #: src/components/wallet/Wallets.tsx:105
+#: src/components/wallet/WalletStatusCard.tsx:20
 msgid "syncing"
 msgstr "synkronoi"
 
@@ -2064,6 +2064,7 @@ msgstr "synkronoi"
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} Lohkopalkkiot"
 
+#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:17
 #: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:17
 msgid "{currencyCode} Total Kale Farmed"
 msgstr "{currencyCode} Chioja Farmaroitu"
