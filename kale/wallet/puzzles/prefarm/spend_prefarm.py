@@ -29,8 +29,8 @@ async def main() -> None:
         print(farmer_prefarm.amount, farmer_amounts)
         assert farmer_amounts == farmer_prefarm.amount // 2
         assert pool_amounts == pool_prefarm.amount // 2
-        address1 = "xka10prg2fsa7wvr7cjwx6ty3zja7lzaz40us7rff838v3aguyt26tvs7jw2z9"  # Key 1
-        address2 = "xka10prg2fsa7wvr7cjwx6ty3zja7lzaz40us7rff838v3aguyt26tvs7jw2z9"  # Key 2
+        address1 = "xka1vshypxxd3hgkzaqcdqrqhk8sa2at3h97d6vyck3vfwcq56wvjmfqv8h8kd"  # Key 1
+        address2 = "xka1vshypxxd3hgkzaqcdqrqhk8sa2at3h97d6vyck3vfwcq56wvjmfqv8h8kd"  # Key 2
 
         ph1 = decode_puzzle_hash(address1)
         ph2 = decode_puzzle_hash(address2)

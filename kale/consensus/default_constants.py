@@ -10,8 +10,8 @@ testnet_kwargs = {
     "SUB_SLOT_ITERS_STARTING": 2 ** 27,
     # DIFFICULTY_STARTING is the starting difficulty for the first epoch, which is then further
     # multiplied by another factor of DIFFICULTY_CONSTANT_FACTOR, to be used in the VDF iter calculation formula.
-    "DIFFICULTY_CONSTANT_FACTOR": 2 ** 68,
-    "DIFFICULTY_STARTING": 50,
+    "DIFFICULTY_CONSTANT_FACTOR": 2 ** 66,
+    "DIFFICULTY_STARTING": 7,
     "DIFFICULTY_CHANGE_MAX_FACTOR": 3,  # The next difficulty is truncated to range [prev / FACTOR, prev * FACTOR]
     # These 3 constants must be changed at the same time
     "SUB_EPOCH_BLOCKS": 384,  # The number of blocks per sub-epoch, mainnet 384
@@ -32,10 +32,10 @@ testnet_kwargs = {
     # Forks of chia should change this value to provide replay attack protection. This is set to mainnet genesis call
     "AGG_SIG_ME_ADDITIONAL_DATA": bytes.fromhex("9248f1109f8f5b99d77b39e7e50ed2491848baf30d2837857561c599ef9b74cb"),
     "GENESIS_PRE_FARM_POOL_PUZZLE_HASH": bytes.fromhex(
-        "784685261df3983f624e3696488a5df7c5d155fc8786949e27647a8e116ad2d9"
+        "642e4098cd8dd161741868060bd8f0eabab8dcbe6e984c5a2c4bb00a69cc96d2"
     ),
     "GENESIS_PRE_FARM_FARMER_PUZZLE_HASH": bytes.fromhex(
-        "784685261df3983f624e3696488a5df7c5d155fc8786949e27647a8e116ad2d9"
+        "642e4098cd8dd161741868060bd8f0eabab8dcbe6e984c5a2c4bb00a69cc96d2"
     ),
     "MAX_VDF_WITNESS_SIZE": 64,
     # Size of mempool = 50x the size of block
