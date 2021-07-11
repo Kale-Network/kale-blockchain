@@ -264,8 +264,8 @@ msgid "Challenge Hash"
 msgstr "Hash-ul provocării"
 
 #: src/electron/main.tsx:345
-msgid "Chat on KeyBase"
-msgstr "Discută pe KeyBase"
+msgid "Chat on Discord"
+msgstr "Discută pe Discord"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:13
 msgid "Choose Number of Plots"
@@ -2064,7 +2064,6 @@ msgstr "se sincronizeaza"
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} Răsplată Blocuri"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:17
 #: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:17
 msgid "{currencyCode} Total Kale Farmed"
 msgstr "{currencyCode} Total Kale cultivat"

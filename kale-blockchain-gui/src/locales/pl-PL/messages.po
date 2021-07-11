@@ -264,8 +264,8 @@ msgid "Challenge Hash"
 msgstr "Hash wyzwania"
 
 #: src/electron/main.tsx:345
-msgid "Chat on KeyBase"
-msgstr "Czat na KeyBase"
+msgid "Chat on Discord"
+msgstr "Czat na Discord"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:13
 msgid "Choose Number of Plots"
@@ -2064,7 +2064,6 @@ msgstr "synchronizowanie"
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} Nagroda bloku"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:17
 #: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:17
 msgid "{currencyCode} Total Kale Farmed"
 msgstr "{currencyCode} Całkowita ilość wydobytego Kale"
