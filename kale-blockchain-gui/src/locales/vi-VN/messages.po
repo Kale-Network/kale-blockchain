@@ -264,8 +264,8 @@ msgid "Challenge Hash"
 msgstr "Challenge Hash"
 
 #: src/electron/main.tsx:345
-msgid "Chat on KeyBase"
-msgstr "Chat trên Keybase"
+msgid "Chat on Discord"
+msgstr "Chat trên Discord"
 
 #: src/electron/main.tsx:362
 msgid "Kale"

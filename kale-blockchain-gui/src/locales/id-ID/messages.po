@@ -264,8 +264,8 @@ msgid "Challenge Hash"
 msgstr "Challenge Hash"
 
 #: src/electron/main.tsx:345
-msgid "Chat on KeyBase"
-msgstr "Hubung Chat di KeyBase"
+msgid "Chat on Discord"
+msgstr "Hubung Chat di Discord"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:13
 msgid "Choose Number of Plots"
@@ -2066,7 +2066,6 @@ msgstr "sinkronisasi"
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} Blok Ganjaran"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:17
 #: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:17
 msgid "{currencyCode} Total Kale Farmed"
 msgstr "{currencyCode} Total Kale yang di-Farm"

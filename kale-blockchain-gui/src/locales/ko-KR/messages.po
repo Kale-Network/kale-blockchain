@@ -264,7 +264,7 @@ msgid "Challenge Hash"
 msgstr "도전 해시"
 
 #: src/electron/main.tsx:345
-msgid "Chat on KeyBase"
+msgid "Chat on Discord"
 msgstr "키베이스에서 채팅하기"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:13
@@ -2064,7 +2064,6 @@ msgstr "동기화중"
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} 블록 보상"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:17
 #: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:17
 msgid "{currencyCode} Total Kale Farmed"
 msgstr "{currencyCode} 채굴된 총 Kale"

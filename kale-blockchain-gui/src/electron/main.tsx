@@ -399,15 +399,9 @@ if (!handleSquirrelEvent()) {
             },
           },
           {
-            label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
+            label: i18n._(/* i18n */ { id: 'Chat on Discord' }),
             click: () => {
-              openExternal('https://keybase.io/team/kale_network.public');
-            },
-          },
-          {
-            label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
-            click: () => {
-              openExternal('https://twitter.com/kale_project');
+              openExternal('https://discord.gg/cSrV78ye');
             },
           },
         ],

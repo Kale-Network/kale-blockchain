@@ -268,8 +268,8 @@ msgid "Challenge Hash"
 msgstr "چالشِ در هم سازی(هش)"
 
 #: src/electron/main.tsx:345
-msgid "Chat on KeyBase"
-msgstr "در اپلیکیشن KeyBase صبحت کنید"
+msgid "Chat on Discord"
+msgstr "در اپلیکیشن Discord صبحت کنید"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:13
 msgid "Choose Number of Plots"
@@ -2080,7 +2080,6 @@ msgstr "در حال همگام سازی"
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} جایزه بلوک"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:17
 #: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:17
 msgid "{currencyCode} Total Kale Farmed"
 msgstr "{currencyCode} مجموع چیـا برداشت شده"

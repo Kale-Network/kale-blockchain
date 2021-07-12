@@ -264,8 +264,8 @@ msgid "Challenge Hash"
 msgstr "Hash Izazova"
 
 #: src/electron/main.tsx:345
-msgid "Chat on KeyBase"
-msgstr "Razgovaraj na KeyBase"
+msgid "Chat on Discord"
+msgstr "Razgovaraj na Discord"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:13
 msgid "Choose Number of Plots"
@@ -2064,7 +2064,6 @@ msgstr "sinkronizacija"
 msgid "{currencyCode} Block Rewards"
 msgstr "{currencyCode} Nagrade bloka"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:17
 #: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:17
 msgid "{currencyCode} Total Kale Farmed"
 msgstr "{currencyCode} Ukupno ugojeno Kale"
