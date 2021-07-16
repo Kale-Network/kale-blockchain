@@ -40,9 +40,9 @@
      inkscape:window-height="1018"
      id="namedview17"
      showgrid="false"
-     inkscape:zoom="7.3866667"
-     inkscape:cx="83.276483"
-     inkscape:cy="29"
+     inkscape:zoom="5.2231621"
+     inkscape:cx="100.68238"
+     inkscape:cy="47.649496"
      inkscape:window-x="-6"
      inkscape:window-y="-6"
      inkscape:window-maximized="1"
@@ -51,13 +51,46 @@
   <text
      xml:space="preserve"
      style="font-style:normal;font-weight:normal;font-size:68.4852px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.71212"
-     x="-4.8869319"
+     x="0.65840679"
      y="52.600101"
      id="text848"
      transform="scale(0.92847881,1.0770305)"><tspan
        sodipodi:role="line"
        id="tspan846"
-       x="-4.8869319"
+       x="0.65840679"
        y="52.600101"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#3aac59;fill-opacity:1;stroke-width:1.71212">Kale</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#3aac59;fill-opacity:1;stroke-width:1.71212">  ale</tspan></text>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1">
+    <rect
+       style="fill:#3aac59;stroke-width:1.90142;stroke-linecap:round;stroke-linejoin:round"
+       id="rect838"
+       width="6.3628159"
+       height="54.828518"
+       x="0.79650551"
+       y="1.6245487" />
+    <ellipse
+       style="fill:#3aac59;stroke-width:2.05471;stroke-linecap:round;stroke-linejoin:round"
+       id="path833"
+       cx="48.651646"
+       cy="16.092056"
+       rx="21.115313"
+       ry="6.6092262"
+       transform="matrix(0.7380457,0.67475073,-0.80706812,0.59045834,0,0)" />
+    <ellipse
+       style="fill:#3aac59;stroke-width:2.22539;stroke-linecap:round;stroke-linejoin:round"
+       id="path858"
+       cx="2.6692171"
+       cy="24.303627"
+       rx="17.870035"
+       ry="7.0397115"
+       transform="rotate(-45)" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 30.038383,3.9259928 C 29.361487,4.33213 6.7531842,27.752708 6.7531842,27.752708 L 36.942715,54.82852"
+       id="path862"
+       sodipodi:nodetypes="ccc" />
+  </g>
 </svg>
