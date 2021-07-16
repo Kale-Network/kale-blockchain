@@ -40,24 +40,35 @@
      inkscape:window-height="1018"
      id="namedview17"
      showgrid="false"
-     inkscape:zoom="7.3866667"
-     inkscape:cx="83.276483"
-     inkscape:cy="29"
+     inkscape:zoom="5.2231621"
+     inkscape:cx="175.80771"
+     inkscape:cy="38.249455"
      inkscape:window-x="-6"
      inkscape:window-y="-6"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg15"
+     inkscape:current-layer="layer1"
      inkscape:document-rotation="0" />
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-weight:normal;font-size:68.4852px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.71212"
-     x="-4.8869319"
-     y="52.600101"
-     id="text848"
-     transform="scale(0.92847881,1.0770305)"><tspan
-       sodipodi:role="line"
-       id="tspan846"
-       x="-4.8869319"
-       y="52.600101"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#3aac59;fill-opacity:1;stroke-width:1.71212">Kale</tspan></text>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Text"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:68.4852px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.71212"
+       x="-5.3140898"
+       y="52.681931"
+       id="text848"
+       transform="scale(0.92847881,1.0770305)"><tspan
+         sodipodi:role="line"
+         id="tspan846"
+         x="-5.3140898"
+         y="52.681931"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#3aac59;fill-opacity:1;stroke-width:1.71212">Kale</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="display:inline" />
 </svg>
