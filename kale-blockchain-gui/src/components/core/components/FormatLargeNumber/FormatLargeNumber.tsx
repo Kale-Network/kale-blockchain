@@ -24,7 +24,7 @@ export default function FormatLargeNumber(props: Props) {
 
   const numberFormat = useMemo(() => new Intl.NumberFormat(locale), [locale]);
   const formatedValue = useMemo(() => {
-    if (typeof value === 'undefined') {
+    if (typeof value === 'undefined' || value === null) {
       return value;
     } else if (typeof value === 'bigint') {
       return BigInt(value).toLocaleString(locale);
@@ -33,9 +33,5 @@ export default function FormatLargeNumber(props: Props) {
     return numberFormat.format(value);
   }, [value, numberFormat]);
 
-  return (
-    <span>
-      {formatedValue}
-    </span>
-  );
+  return <span>{formatedValue}</span>;
 }

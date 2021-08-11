@@ -10,17 +10,13 @@ global.daemon_rpc_ws = `wss://${self_hostname}:56300`;
 global.cert_path = 'config/ssl/daemon/private_daemon.crt';
 global.key_path = 'config/ssl/daemon/private_daemon.key';
 
-function loadConfig(version) {
+function loadConfig(net) {
   try {
-    // finding the right config file uses this precedence
-    // 1) KALE_ROOT environment variable
-    // 2) version passed in and determined by the `kale version` call
-
-    // check if KALE_ROOT is set. it overrides everything else
+    // check if KALE_ROOT is set. it overrides 'net'
     const config_root_dir =
       'KALE_ROOT' in process.env
         ? process.env.KALE_ROOT
-        : path.join(os.homedir(), '.kale', version);
+        : path.join(os.homedir(), '.kale', net);
     const config = yaml.load(
       fs.readFileSync(path.join(config_root_dir, 'config/config.yaml'), 'utf8'),
     );
