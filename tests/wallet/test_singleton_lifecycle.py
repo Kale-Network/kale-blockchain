@@ -5,16 +5,16 @@ from typing import List, Tuple
 from blspy import G2Element
 from clvm_tools import binutils
 
-from flax.types.blockchain_format.program import Program, INFINITE_COST
-from flax.types.announcement import Announcement
-from flax.types.blockchain_format.coin import Coin
-from flax.types.blockchain_format.sized_bytes import bytes32
-from flax.types.coin_spend import CoinSpend
-from flax.types.spend_bundle import SpendBundle
-from flax.util.condition_tools import ConditionOpcode
+from kale.types.blockchain_format.program import Program, INFINITE_COST
+from kale.types.announcement import Announcement
+from kale.types.blockchain_format.coin import Coin
+from kale.types.blockchain_format.sized_bytes import bytes32
+from kale.types.coin_spend import CoinSpend
+from kale.types.spend_bundle import SpendBundle
+from kale.util.condition_tools import ConditionOpcode
 
-from flax.util.ints import uint64
-from flax.wallet.puzzles.load_clvm import load_clvm
+from kale.util.ints import uint64
+from kale.wallet.puzzles.load_clvm import load_clvm
 
 from tests.core.full_node.test_conditions import bt, check_spend_bundle_validity, initial_blocks
 

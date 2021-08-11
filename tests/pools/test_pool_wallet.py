@@ -5,15 +5,15 @@ from typing import List
 import pytest
 from blspy import PrivateKey
 
-from flax.pools.pool_wallet import PoolWallet
-from flax.pools.pool_wallet_info import PoolState, FARMING_TO_POOL
-from flax.simulator.simulator_protocol import FarmNewBlockProtocol
-from flax.types.coin_spend import CoinSpend
-from flax.types.full_block import FullBlock
-from flax.types.peer_info import PeerInfo
-from flax.util.ints import uint16, uint32
-from flax.wallet.derive_keys import master_sk_to_singleton_owner_sk
-from flax.wallet.wallet_state_manager import WalletStateManager
+from kale.pools.pool_wallet import PoolWallet
+from kale.pools.pool_wallet_info import PoolState, FARMING_TO_POOL
+from kale.simulator.simulator_protocol import FarmNewBlockProtocol
+from kale.types.coin_spend import CoinSpend
+from kale.types.full_block import FullBlock
+from kale.types.peer_info import PeerInfo
+from kale.util.ints import uint16, uint32
+from kale.wallet.derive_keys import master_sk_to_singleton_owner_sk
+from kale.wallet.wallet_state_manager import WalletStateManager
 from tests.setup_nodes import self_hostname, setup_simulators_and_wallets
 
 

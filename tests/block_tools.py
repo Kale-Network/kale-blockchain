@@ -14,72 +14,72 @@ from typing import Callable, Dict, List, Optional, Tuple, Any
 from blspy import AugSchemeMPL, G1Element, G2Element, PrivateKey
 from chiabip158 import PyBIP158
 
-from flax.cmds.init_funcs import create_all_ssl, create_default_flax_config
-from flax.full_node.bundle_tools import (
+from kale.cmds.init_funcs import create_all_ssl, create_default_kale_config
+from kale.full_node.bundle_tools import (
     best_solution_generator_from_template,
     detect_potential_template_generator,
     simple_solution_generator,
 )
-from flax.util.errors import Err
-from flax.full_node.generator import setup_generator_args
-from flax.full_node.mempool_check_conditions import GENERATOR_MOD
-from flax.plotting.create_plots import create_plots
-from flax.consensus.block_creation import unfinished_block_to_full_block
-from flax.consensus.block_record import BlockRecord
-from flax.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
-from flax.consensus.blockchain_interface import BlockchainInterface
-from flax.consensus.coinbase import create_puzzlehash_for_pk, create_farmer_coin, create_pool_coin
-from flax.consensus.constants import ConsensusConstants
-from flax.consensus.default_constants import DEFAULT_CONSTANTS
-from flax.consensus.deficit import calculate_deficit
-from flax.consensus.full_block_to_block_record import block_to_block_record
-from flax.consensus.make_sub_epoch_summary import next_sub_epoch_summary
-from flax.consensus.cost_calculator import NPCResult, calculate_cost_of_program
-from flax.consensus.pot_iterations import (
+from kale.util.errors import Err
+from kale.full_node.generator import setup_generator_args
+from kale.full_node.mempool_check_conditions import GENERATOR_MOD
+from kale.plotting.create_plots import create_plots
+from kale.consensus.block_creation import unfinished_block_to_full_block
+from kale.consensus.block_record import BlockRecord
+from kale.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
+from kale.consensus.blockchain_interface import BlockchainInterface
+from kale.consensus.coinbase import create_puzzlehash_for_pk, create_farmer_coin, create_pool_coin
+from kale.consensus.constants import ConsensusConstants
+from kale.consensus.default_constants import DEFAULT_CONSTANTS
+from kale.consensus.deficit import calculate_deficit
+from kale.consensus.full_block_to_block_record import block_to_block_record
+from kale.consensus.make_sub_epoch_summary import next_sub_epoch_summary
+from kale.consensus.cost_calculator import NPCResult, calculate_cost_of_program
+from kale.consensus.pot_iterations import (
     calculate_ip_iters,
     calculate_iterations_quality,
     calculate_sp_interval_iters,
     calculate_sp_iters,
     is_overflow_block,
 )
-from flax.consensus.vdf_info_computation import get_signage_point_vdf_info
-from flax.full_node.signage_point import SignagePoint
-from flax.plotting.plot_tools import PlotInfo, load_plots, parse_plot_info
-from flax.types.blockchain_format.classgroup import ClassgroupElement
-from flax.types.blockchain_format.coin import Coin, hash_coin_list
-from flax.types.blockchain_format.foliage import Foliage, FoliageBlockData, FoliageTransactionBlock, TransactionsInfo
-from flax.types.blockchain_format.pool_target import PoolTarget
-from flax.types.blockchain_format.proof_of_space import ProofOfSpace
-from flax.types.blockchain_format.reward_chain_block import RewardChainBlockUnfinished
-from flax.types.blockchain_format.sized_bytes import bytes32
-from flax.types.blockchain_format.slots import (
+from kale.consensus.vdf_info_computation import get_signage_point_vdf_info
+from kale.full_node.signage_point import SignagePoint
+from kale.plotting.plot_tools import PlotInfo, load_plots, parse_plot_info
+from kale.types.blockchain_format.classgroup import ClassgroupElement
+from kale.types.blockchain_format.coin import Coin, hash_coin_list
+from kale.types.blockchain_format.foliage import Foliage, FoliageBlockData, FoliageTransactionBlock, TransactionsInfo
+from kale.types.blockchain_format.pool_target import PoolTarget
+from kale.types.blockchain_format.proof_of_space import ProofOfSpace
+from kale.types.blockchain_format.reward_chain_block import RewardChainBlockUnfinished
+from kale.types.blockchain_format.sized_bytes import bytes32
+from kale.types.blockchain_format.slots import (
     ChallengeChainSubSlot,
     InfusedChallengeChainSubSlot,
     RewardChainSubSlot,
     SubSlotProofs,
 )
-from flax.types.blockchain_format.sub_epoch_summary import SubEpochSummary
-from flax.types.blockchain_format.vdf import VDFInfo, VDFProof
-from flax.types.condition_with_args import ConditionWithArgs
-from flax.types.end_of_slot_bundle import EndOfSubSlotBundle
-from flax.types.full_block import FullBlock
-from flax.types.generator_types import BlockGenerator, CompressorArg
-from flax.types.spend_bundle import SpendBundle
-from flax.types.unfinished_block import UnfinishedBlock
-from flax.types.name_puzzle_condition import NPC
-from flax.util.bech32m import encode_puzzle_hash
-from flax.util.block_cache import BlockCache
-from flax.util.condition_tools import ConditionOpcode, conditions_by_opcode
-from flax.util.config import load_config, save_config
-from flax.util.hash import std_hash
-from flax.util.ints import uint8, uint16, uint32, uint64, uint128
-from flax.util.keychain import Keychain, bytes_to_mnemonic
-from flax.util.merkle_set import MerkleSet
-from flax.util.prev_transaction_block import get_prev_transaction_block
-from flax.util.path import mkdir
-from flax.util.vdf_prover import get_vdf_info_and_proof
+from kale.types.blockchain_format.sub_epoch_summary import SubEpochSummary
+from kale.types.blockchain_format.vdf import VDFInfo, VDFProof
+from kale.types.condition_with_args import ConditionWithArgs
+from kale.types.end_of_slot_bundle import EndOfSubSlotBundle
+from kale.types.full_block import FullBlock
+from kale.types.generator_types import BlockGenerator, CompressorArg
+from kale.types.spend_bundle import SpendBundle
+from kale.types.unfinished_block import UnfinishedBlock
+from kale.types.name_puzzle_condition import NPC
+from kale.util.bech32m import encode_puzzle_hash
+from kale.util.block_cache import BlockCache
+from kale.util.condition_tools import ConditionOpcode, conditions_by_opcode
+from kale.util.config import load_config, save_config
+from kale.util.hash import std_hash
+from kale.util.ints import uint8, uint16, uint32, uint64, uint128
+from kale.util.keychain import Keychain, bytes_to_mnemonic
+from kale.util.merkle_set import MerkleSet
+from kale.util.prev_transaction_block import get_prev_transaction_block
+from kale.util.path import mkdir
+from kale.util.vdf_prover import get_vdf_info_and_proof
 from tests.wallet_tools import WalletTool
-from flax.wallet.derive_keys import (
+from kale.wallet.derive_keys import (
     master_sk_to_farmer_sk,
     master_sk_to_local_sk,
     master_sk_to_pool_sk,
@@ -131,7 +131,7 @@ class BlockTools:
             root_path = Path(self._tempdir.name)
 
         self.root_path = root_path
-        create_default_flax_config(root_path)
+        create_default_kale_config(root_path)
         self.keychain = Keychain("testing-1.8.0", True)
         self.keychain.delete_all_keys()
         self.farmer_master_sk_entropy = std_hash(b"block_tools farmer key")
@@ -155,7 +155,7 @@ class BlockTools:
 
         self.farmer_pubkeys: List[G1Element] = [master_sk_to_farmer_sk(sk).get_g1() for sk in self.all_sks]
         if len(self.pool_pubkeys) == 0 or len(self.farmer_pubkeys) == 0:
-            raise RuntimeError("Keys not generated. Run `flax generate keys`")
+            raise RuntimeError("Keys not generated. Run `kale generate keys`")
 
         self.load_plots()
         self.local_sk_cache: Dict[bytes32, Tuple[PrivateKey, Any]] = {}
@@ -1219,7 +1219,7 @@ def get_challenges(
 
 
 def get_plot_dir() -> Path:
-    cache_path = Path(os.path.expanduser(os.getenv("FLAX_ROOT", "~/.flax/"))) / "test-plots"
+    cache_path = Path(os.path.expanduser(os.getenv("KALE_ROOT", "~/.kale/"))) / "test-plots"
     mkdir(cache_path)
     return cache_path
 

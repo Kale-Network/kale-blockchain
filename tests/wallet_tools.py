@@ -2,21 +2,21 @@ from typing import Dict, List, Optional, Tuple
 
 from blspy import AugSchemeMPL, G2Element, PrivateKey
 
-from flax.consensus.constants import ConsensusConstants
-from flax.util.hash import std_hash
-from flax.types.announcement import Announcement
-from flax.types.blockchain_format.coin import Coin
-from flax.types.blockchain_format.program import Program
-from flax.types.blockchain_format.sized_bytes import bytes32
-from flax.types.coin_spend import CoinSpend
-from flax.types.condition_opcodes import ConditionOpcode
-from flax.types.condition_with_args import ConditionWithArgs
-from flax.types.spend_bundle import SpendBundle
-from flax.util.clvm import int_from_bytes, int_to_bytes
-from flax.util.condition_tools import conditions_by_opcode, conditions_for_solution, pkm_pairs_for_conditions_dict
-from flax.util.ints import uint32, uint64
-from flax.wallet.derive_keys import master_sk_to_wallet_sk
-from flax.wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import (
+from kale.consensus.constants import ConsensusConstants
+from kale.util.hash import std_hash
+from kale.types.announcement import Announcement
+from kale.types.blockchain_format.coin import Coin
+from kale.types.blockchain_format.program import Program
+from kale.types.blockchain_format.sized_bytes import bytes32
+from kale.types.coin_spend import CoinSpend
+from kale.types.condition_opcodes import ConditionOpcode
+from kale.types.condition_with_args import ConditionWithArgs
+from kale.types.spend_bundle import SpendBundle
+from kale.util.clvm import int_from_bytes, int_to_bytes
+from kale.util.condition_tools import conditions_by_opcode, conditions_for_solution, pkm_pairs_for_conditions_dict
+from kale.util.ints import uint32, uint64
+from kale.wallet.derive_keys import master_sk_to_wallet_sk
+from kale.wallet.puzzles.p2_delegated_puzzle_or_hidden_puzzle import (
     DEFAULT_HIDDEN_PUZZLE_HASH,
     calculate_synthetic_secret_key,
     puzzle_for_pk,

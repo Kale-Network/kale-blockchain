@@ -8,27 +8,27 @@ from typing import Optional, List, Dict
 import pytest
 from blspy import G1Element, AugSchemeMPL
 
-from flax.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
-from flax.plotting.create_plots import create_plots
-from flax.pools.pool_wallet_info import PoolWalletInfo, PoolSingletonState
-from flax.protocols import full_node_protocol
-from flax.protocols.full_node_protocol import RespondBlock
-from flax.rpc.rpc_server import start_rpc_server
-from flax.rpc.wallet_rpc_api import WalletRpcApi
-from flax.rpc.wallet_rpc_client import WalletRpcClient
-from flax.simulator.simulator_protocol import FarmNewBlockProtocol, ReorgProtocol
-from flax.types.blockchain_format.proof_of_space import ProofOfSpace
-from flax.types.blockchain_format.sized_bytes import bytes32
+from kale.consensus.block_rewards import calculate_base_farmer_reward, calculate_pool_reward
+from kale.plotting.create_plots import create_plots
+from kale.pools.pool_wallet_info import PoolWalletInfo, PoolSingletonState
+from kale.protocols import full_node_protocol
+from kale.protocols.full_node_protocol import RespondBlock
+from kale.rpc.rpc_server import start_rpc_server
+from kale.rpc.wallet_rpc_api import WalletRpcApi
+from kale.rpc.wallet_rpc_client import WalletRpcClient
+from kale.simulator.simulator_protocol import FarmNewBlockProtocol, ReorgProtocol
+from kale.types.blockchain_format.proof_of_space import ProofOfSpace
+from kale.types.blockchain_format.sized_bytes import bytes32
 
-from flax.types.peer_info import PeerInfo
-from flax.util.bech32m import encode_puzzle_hash
+from kale.types.peer_info import PeerInfo
+from kale.util.bech32m import encode_puzzle_hash
 from tests.block_tools import get_plot_dir, get_plot_tmp_dir
-from flax.util.config import load_config
-from flax.util.hash import std_hash
-from flax.util.ints import uint16, uint32
-from flax.wallet.derive_keys import master_sk_to_local_sk
-from flax.wallet.transaction_record import TransactionRecord
-from flax.wallet.util.wallet_types import WalletType
+from kale.util.config import load_config
+from kale.util.hash import std_hash
+from kale.util.ints import uint16, uint32
+from kale.wallet.derive_keys import master_sk_to_local_sk
+from kale.wallet.transaction_record import TransactionRecord
+from kale.wallet.util.wallet_types import WalletType
 from tests.setup_nodes import self_hostname, setup_simulators_and_wallets, bt
 from tests.time_out_assert import time_out_assert
 
@@ -687,11 +687,11 @@ class TestPoolWalletRpc:
                 if WalletType(int(summary["type"])) == WalletType.POOLING_WALLET:
                     assert False
 
-            async def have_flax():
+            async def have_kale():
                 await self.farm_blocks(full_node_api, our_ph, 1)
                 return (await wallets[0].get_confirmed_balance()) > 0
 
-            await time_out_assert(timeout=WAIT_SECS, function=have_flax)
+            await time_out_assert(timeout=WAIT_SECS, function=have_kale)
 
             creation_tx: TransactionRecord = await client.create_new_pool_wallet(
                 our_ph, "", 0, "localhost:5000", "new", "SELF_POOLING"
@@ -799,11 +799,11 @@ class TestPoolWalletRpc:
                 if WalletType(int(summary["type"])) == WalletType.POOLING_WALLET:
                     assert False
 
-            async def have_flax():
+            async def have_kale():
                 await self.farm_blocks(full_node_api, our_ph, 1)
                 return (await wallets[0].get_confirmed_balance()) > 0
 
-            await time_out_assert(timeout=WAIT_SECS, function=have_flax)
+            await time_out_assert(timeout=WAIT_SECS, function=have_kale)
 
             creation_tx: TransactionRecord = await client.create_new_pool_wallet(
                 pool_a_ph, "https://pool-a.org", 5, "localhost:5000", "new", "FARMING_TO_POOL"
@@ -886,11 +886,11 @@ class TestPoolWalletRpc:
                 if WalletType(int(summary["type"])) == WalletType.POOLING_WALLET:
                     assert False
 
-            async def have_flax():
+            async def have_kale():
                 await self.farm_blocks(full_node_api, our_ph, 1)
                 return (await wallets[0].get_confirmed_balance()) > 0
 
-            await time_out_assert(timeout=WAIT_SECS, function=have_flax)
+            await time_out_assert(timeout=WAIT_SECS, function=have_kale)
 
             creation_tx: TransactionRecord = await client.create_new_pool_wallet(
                 pool_a_ph, "https://pool-a.org", 5, "localhost:5000", "new", "FARMING_TO_POOL"
