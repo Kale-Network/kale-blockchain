@@ -11,7 +11,7 @@ from kale.types.blockchain_format.coin import Coin
 from kale.types.blockchain_format.program import Program
 from kale.types.blockchain_format.sized_bytes import bytes32
 from kale.types.spend_bundle import SpendBundle
-from kale.types.coin_solution import CoinSolution
+from kale.types.coin_spend import CoinSpend
 from kale.util.byte_types import hexstr_to_bytes
 from kale.util.db_wrapper import DBWrapper
 from kale.util.hash import std_hash
@@ -33,8 +33,6 @@ from kale.wallet.util.transaction_type import TransactionType
 from kale.wallet.util.wallet_types import WalletType
 from kale.wallet.wallet import Wallet
 from kale.wallet.wallet_coin_record import WalletCoinRecord
-
-# from kale.wallet.cc_wallet.debug_spend_bundle import debug_spend_bundle
 
 
 class TradeManager:
@@ -153,7 +151,7 @@ class TradeManager:
                     self.log.warning(f"Trade with id: {trade.trade_id} failed at height: {height}")
 
     async def get_locked_coins(self, wallet_id: int = None) -> Dict[bytes32, WalletCoinRecord]:
-        """ Returns a dictionary of confirmed coins that are locked by a trade. """
+        """Returns a dictionary of confirmed coins that are locked by a trade."""
         all_pending = []
         pending_accept = await self.get_offers_with_status(TradeStatus.PENDING_ACCEPT)
         pending_confirm = await self.get_offers_with_status(TradeStatus.PENDING_CONFIRM)
@@ -185,7 +183,7 @@ class TradeManager:
         return record
 
     async def get_locked_coins_in_spend_bundle(self, bundle: SpendBundle) -> Dict[bytes32, WalletCoinRecord]:
-        """ Returns a list of coin records that are used in this SpendBundle"""
+        """Returns a list of coin records that are used in this SpendBundle"""
         result = {}
         removals = bundle.removals()
         for coin in removals:
@@ -199,7 +197,7 @@ class TradeManager:
         await self.trade_store.set_status(trade_id, TradeStatus.CANCELED, False)
 
     async def cancel_pending_offer_safely(self, trade_id: bytes32):
-        """ This will create a transaction that includes coins that were offered"""
+        """This will create a transaction that includes coins that were offered"""
         self.log.info(f"Secure-Cancel pending offer with id trade_id {trade_id.hex()}")
         trade = await self.trade_store.get_trade_record(trade_id)
         if trade is None:
@@ -362,14 +360,14 @@ class TradeManager:
         if trade_offer is not None:
             offer_spend_bundle: SpendBundle = trade_offer.spend_bundle
 
-        coinsols: List[CoinSolution] = []  # [] of CoinSolutions
-        cc_coinsol_outamounts: Dict[bytes32, List[Tuple[CoinSolution, int]]] = dict()
+        coinsols: List[CoinSpend] = []  # [] of CoinSpends
+        cc_coinsol_outamounts: Dict[bytes32, List[Tuple[CoinSpend, int]]] = dict()
         aggsig = offer_spend_bundle.aggregated_signature
         cc_discrepancies: Dict[bytes32, int] = dict()
         kale_discrepancy = None
         wallets: Dict[bytes32, Any] = dict()  # colour to wallet dict
 
-        for coinsol in offer_spend_bundle.coin_solutions:
+        for coinsol in offer_spend_bundle.coin_spends:
             puzzle: Program = Program.from_bytes(bytes(coinsol.puzzle_reveal))
             solution: Program = Program.from_bytes(bytes(coinsol.solution))
 
@@ -416,7 +414,7 @@ class TradeManager:
             )
             if kale_spend_bundle is not None:
                 for coinsol in coinsols:
-                    kale_spend_bundle.coin_solutions.append(coinsol)
+                    kale_spend_bundle.coin_spends.append(coinsol)
 
         zero_spend_list: List[SpendBundle] = []
         spend_bundle = None
@@ -533,7 +531,6 @@ class TradeManager:
         now = uint64(int(time.time()))
         if kale_spend_bundle is not None:
             spend_bundle = SpendBundle.aggregate([spend_bundle, kale_spend_bundle])
-            # debug_spend_bundle(spend_bundle)
             if kale_discrepancy < 0:
                 tx_record = TransactionRecord(
                     confirmed_at_height=uint32(0),

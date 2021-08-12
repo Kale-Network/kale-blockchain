@@ -2,7 +2,13 @@ import React from 'react';
 import { Trans } from '@lingui/macro';
 import { useDispatch } from 'react-redux';
 import { ConfirmDialog, More } from '@kale/core';
-import { Box, Divider, ListItemIcon, MenuItem, Typography } from '@material-ui/core';
+import {
+  Box,
+  Divider,
+  ListItemIcon,
+  MenuItem,
+  Typography,
+} from '@material-ui/core';
 import {
   DeleteForever as DeleteForeverIcon,
   Info as InfoIcon,
@@ -12,7 +18,6 @@ import type PlotQueueItem from '../../../types/PlotQueueItem';
 import PlotStatus from '../../../constants/PlotStatus';
 import { stopPlotting } from '../../../modules/plotter_messages';
 import PlotQueueLogDialog from './PlotQueueLogDialog';
-import isWindows from '../../../util/isWindows';
 
 type Props = {
   queueItem: PlotQueueItem;
@@ -20,22 +25,19 @@ type Props = {
 
 export default function PlotQueueAction(props: Props) {
   const {
-    queueItem: {
-      id,
-      state,
-    }
+    queueItem: { id, state },
   } = props;
 
   const dispatch = useDispatch();
   const openDialog = useOpenDialog();
-  const canDelete = state !== PlotStatus.REMOVING && !isWindows;
+  const canDelete = state !== PlotStatus.REMOVING;
 
   async function handleDeletePlot() {
     if (!canDelete) {
       return;
     }
 
-    const deleteConfirmed = await openDialog((
+    const deleteConfirmed = await openDialog(
       <ConfirmDialog
         title={<Trans>Delete Plot</Trans>}
         confirmTitle={<Trans>Delete</Trans>}
@@ -45,8 +47,8 @@ export default function PlotQueueAction(props: Props) {
           Are you sure you want to delete the plot? The plot cannot be
           recovered.
         </Trans>
-      </ConfirmDialog>
-    ));
+      </ConfirmDialog>,
+    );
 
     // @ts-ignore
     if (deleteConfirmed) {
@@ -55,9 +57,7 @@ export default function PlotQueueAction(props: Props) {
   }
 
   function handleViewLog() {
-    openDialog((
-      <PlotQueueLogDialog id={id} />
-    ));
+    openDialog(<PlotQueueLogDialog id={id} />);
   }
 
   return (
@@ -66,7 +66,12 @@ export default function PlotQueueAction(props: Props) {
         <Box>
           {state === PlotStatus.RUNNING && (
             <>
-              <MenuItem onClick={() => { onClose(); handleViewLog(); }}>
+              <MenuItem
+                onClick={() => {
+                  onClose();
+                  handleViewLog();
+                }}
+              >
                 <ListItemIcon>
                   <InfoIcon fontSize="small" />
                 </ListItemIcon>
@@ -78,7 +83,13 @@ export default function PlotQueueAction(props: Props) {
             </>
           )}
 
-          <MenuItem onClick={() => { onClose(); handleDeletePlot(); }} disabled={!canDelete}>
+          <MenuItem
+            onClick={() => {
+              onClose();
+              handleDeletePlot();
+            }}
+            disabled={!canDelete}
+          >
             <ListItemIcon>
               <DeleteForeverIcon fontSize="small" />
             </ListItemIcon>
