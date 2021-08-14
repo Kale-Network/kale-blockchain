@@ -112,14 +112,14 @@ describe('units', () => {
     });
     it('updates an existing display', () => {
       units.setDisplay('kale', {
-        format: '{amount} TXFX',
+        format: '{amount} TXKA',
         fractionDigits: 0,
       });
 
       const result = units.getDisplay('kale');
 
       expect(result).toEqual({
-        format: '{amount} TXFX',
+        format: '{amount} TXKA',
         fractionDigits: 0,
       });
     });

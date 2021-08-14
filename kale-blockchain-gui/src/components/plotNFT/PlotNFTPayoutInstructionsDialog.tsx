@@ -101,7 +101,7 @@ export default function PlotNFTPayoutInstructionsDialog(props: Props) {
                 <Typography variant="body2" color="textSecondary">
                   <Trans>
                     These are the instructions for how the farmer wants to get
-                    paid. By default this will be an XFX address, but it can be
+                    paid. By default this will be an XKA address, but it can be
                     set to any string with a size of less than 1024 characters, so
                     it can represent another blockchain or payment system
                     identifier.
