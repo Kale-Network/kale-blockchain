@@ -23,8 +23,8 @@ msgid "(Optional)"
 msgstr "(Valgfri)"
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:64
-msgid "*Want to explore Kale’s blocks further? Check out <0>Kale Explorer</0> built by an open source developer."
-msgstr "*Vil du udforske Kales blokke yderligerer? Se <0>Kale Explorer</0> bygget af en open source udvikler."
+#~ msgid "*Want to explore Kale’s blocks further? Check out <0>Kale Explorer</0> built by an open source developer."
+#~ msgstr "*Vil du udforske Kales blokke yderligerer? Se <0>Kale Explorer</0> bygget af en open source udvikler."
 
 #: src/components/plot/add/PlotAddNFT.tsx:123
 msgid "+ Add New Plot NFT"
@@ -55,9 +55,9 @@ msgstr "Accepter"
 msgid "Accepted at time:"
 msgstr "Accepteret tidspunkt:"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:114
 #: src/components/plot/PlotsFailed.tsx:19
 #: src/components/plot/PlotsNotFound.tsx:19
-#: src/components/plot/overview/PlotOverviewPlots.tsx:114
 msgid "Action"
 msgstr "Aktion"
 
@@ -85,9 +85,9 @@ msgstr "Tilføj Plot til Kø"
 #~ msgstr "Add Wallet"
 
 #: src/components/farm/overview/FarmOverviewHero.tsx:46
-#: src/components/plot/PlotHeader.tsx:63
 #: src/components/plot/add/PlotAdd.tsx:160
 #: src/components/plot/overview/PlotOverviewHero.tsx:54
+#: src/components/plot/PlotHeader.tsx:63
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:230
 #: src/components/plotNFT/PlotNFTCard.tsx:272
 msgid "Add a Plot"
@@ -123,10 +123,10 @@ msgstr "Addresse / Puzzle hash"
 #: src/components/core/components/Amount/Amount.tsx:96
 #: src/components/trading/CreateOffer.jsx:196
 #: src/components/trading/TradesTable.tsx:20
-#: src/components/wallet/WalletHistory.tsx:62
 #: src/components/wallet/create/createNewColouredCoin.jsx:119
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:720
 #: src/components/wallet/standard/WalletStandard.tsx:513
+#: src/components/wallet/WalletHistory.tsx:62
 msgid "Amount"
 msgstr "Beløb"
 
@@ -138,7 +138,7 @@ msgstr "Beløb ({cc_unit})"
 msgid "Amount For Initial Coin"
 msgstr "Beløb for Start Coin"
 
-#: src/components/plot/PlotAction.tsx:30
+#: src/components/plot/PlotAction.tsx:31
 #: src/components/plot/queue/PlotQueueActions.tsx:46
 msgid "Are you sure you want to delete the plot? The plot cannot be recovered."
 msgstr "Er du sikker du vil slette plotfilen? Plotfilen kan ikke gendannes."
@@ -309,18 +309,6 @@ msgstr "Ændre Pool"
 msgid "Chat on Discord"
 msgstr "Chat på Discord"
 
-#: src/electron/main.tsx:419
-msgid "Kale"
-msgstr "Kale"
-
-#: src/electron/main.tsx:358
-msgid "Kale Blockchain Wiki"
-msgstr "Kale Blockchain Wiki"
-
-#: src/components/wallet/standard/WalletStandard.tsx:647
-msgid "Kale Wallet"
-msgstr "Kale Pung"
-
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 msgid "Choose Number of Plots"
 msgstr "Vælg et antal af plotfiler"
@@ -454,7 +442,7 @@ msgid "Copy to Clipboard"
 msgstr "Kopier til Udklipsholder"
 
 #: src/components/backup/BackupCreate.tsx:78
-#: src/components/plot/add/PlotAdd.tsx:177
+#: src/components/plot/add/PlotAdd.tsx:176
 #: src/components/plotNFT/select/PlotNFTSelectPool.tsx:175
 #: src/components/wallet/create/createExistingColouredCoin.jsx:133
 #: src/components/wallet/create/createNewColouredCoin.jsx:142
@@ -589,8 +577,8 @@ msgstr "Dato"
 msgid "Delay"
 msgstr "Forsinkelse"
 
-#: src/components/plot/PlotAction.tsx:27
-#: src/components/plot/PlotAction.tsx:57
+#: src/components/plot/PlotAction.tsx:28
+#: src/components/plot/PlotAction.tsx:58
 #: src/components/plot/queue/PlotQueueActions.tsx:43
 #: src/components/plot/queue/PlotQueueActions.tsx:97
 #: src/components/plotNFT/PlotNFTCard.tsx:122
@@ -600,7 +588,7 @@ msgstr "Forsinkelse"
 msgid "Delete"
 msgstr "Slet"
 
-#: src/components/plot/PlotAction.tsx:26
+#: src/components/plot/PlotAction.tsx:27
 #: src/components/plot/queue/PlotQueueActions.tsx:42
 msgid "Delete Plot"
 msgstr "Slet Plotfil"
@@ -700,10 +688,10 @@ msgstr ""
 msgid "Enter the 24 word mnemonic that you have saved in order to restore your Kale wallet."
 msgstr "Indtast dine 24 mnemoniske ord fra din backup for at gendanne din Kale pung."
 
-#: src/components/farm/FarmerStatus.tsx:21
-#: src/components/farm/FarmerStatus.tsx:22
 #: src/components/farm/card/FarmCardStatus.tsx:35
 #: src/components/farm/card/FarmCardStatus.tsx:49
+#: src/components/farm/FarmerStatus.tsx:21
+#: src/components/farm/FarmerStatus.tsx:22
 #: src/components/plot/PlotStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:21
 #: src/components/plot/queue/PlotQueueIndicator.tsx:22
@@ -744,7 +732,7 @@ msgstr "Eksludér endelig mappe"
 msgid "Failed to open (invalid plots)"
 msgstr "Kan ikke åbne (invalid plotfil)"
 
-#: src/components/dashboard/DashboardSideBar.tsx:55
+#: src/components/dashboard/DashboardSideBar.tsx:54
 #: src/components/wallet/coloured/WalletColoured.tsx:610
 #: src/components/wallet/standard/WalletStandard.tsx:532
 msgid "Farm"
@@ -792,9 +780,9 @@ msgstr "Farmer offentlig nøgle:"
 msgid "Farmers earn block rewards and transaction fees by committing spare space to the network to help secure transactions. This is where your farm will be once you add a plot. <0>Learn more</0>"
 msgstr "Farmer tjener blok belønning og transaktionsgebyrer ved at bruge diskplads til at hjælpe netværket med at sikre transaktioner. Her vil dine plotfiler blive listet når de er tilføjet. <0>Lær mere</0>"
 
+#: src/components/farm/card/FarmCardStatus.tsx:62
 #: src/components/farm/Farm.tsx:23
 #: src/components/farm/FarmerStatus.tsx:18
-#: src/components/farm/card/FarmCardStatus.tsx:62
 #: src/components/plot/PlotStatus.tsx:17
 msgid "Farming"
 msgstr "Farmer"
@@ -811,13 +799,13 @@ msgstr "Farmer Status"
 #: src/components/plotNFT/PlotNFTAbsorbRewards.tsx:154
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:147
 #: src/components/pool/PoolInfo.tsx:17
-#: src/components/wallet/WalletHistory.tsx:66
 #: src/components/wallet/create/createExistingColouredCoin.jsx:123
 #: src/components/wallet/create/createNewColouredCoin.jsx:132
 #: src/components/wallet/create/createRLAdmin.jsx:244
 #: src/components/wallet/create/createRLAdmin.jsx:272
 #: src/components/wallet/rateLimited/WalletRateLimited.jsx:733
 #: src/components/wallet/standard/WalletStandard.tsx:524
+#: src/components/wallet/WalletHistory.tsx:66
 msgid "Fee"
 msgstr "Gebyr"
 
@@ -846,9 +834,9 @@ msgstr "Gebyr Beløb"
 msgid "File"
 msgstr "Fil"
 
+#: src/components/plot/overview/PlotOverviewPlots.tsx:106
 #: src/components/plot/PlotsFailed.tsx:14
 #: src/components/plot/PlotsNotFound.tsx:14
-#: src/components/plot/overview/PlotOverviewPlots.tsx:106
 msgid "Filename"
 msgstr "Filnavn"
 
@@ -869,7 +857,7 @@ msgstr "Følg på Twitter"
 msgid "Frequently Asked Questions"
 msgstr "Ofte Stillet Spørgsmål"
 
-#: src/components/dashboard/DashboardSideBar.tsx:39
+#: src/components/dashboard/DashboardSideBar.tsx:38
 #: src/components/fullNode/FullNode.jsx:323
 msgid "Full Node"
 msgstr "Fuld Node"
@@ -1026,22 +1014,46 @@ msgid "Join a Pool"
 msgstr "Tilslut til en Pulje"
 
 #: src/components/plot/add/PlotAddNFT.tsx:44
-msgid "Join a pool and get consistent XFX farming rewards. The average returns are the same, but it is much less volatile."
-msgstr "Tilslut en pulje og få stabil XFX farm belønninger. Gennemsnitsudbyttet er det samme, med en del mindrer udsving."
+#~ msgid "Join a pool and get consistent XFX farming rewards. The average returns are the same, but it is much less volatile."
+#~ msgstr "Tilslut en pulje og få stabil XFX farm belønninger. Gennemsnitsudbyttet er det samme, med en del mindrer udsving."
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:59
-msgid "Join a pool and get consistent XFX farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
-msgstr "Tilslut en pulje og få stabil XFX farm belønninger. Gennemsnitsudbyttet er det samme, med en del mindrer udsving. Tildel dine plots til en plot NFT. Du kan nemt skifte imellem puljer uden at skulle re-plotte."
+#~ msgid "Join a pool and get consistent XFX farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+#~ msgstr "Tilslut en pulje og få stabil XFX farm belønninger. Gennemsnitsudbyttet er det samme, med en del mindrer udsving. Tildel dine plots til en plot NFT. Du kan nemt skifte imellem puljer uden at skulle re-plotte."
+
+#: src/components/plot/add/PlotAddNFT.tsx:44
+msgid "Join a pool and get consistent XKA farming rewards. The average returns are the same, but it is much less volatile."
+msgstr ""
+
+#: src/components/plotNFT/PlotNFTAdd.tsx:59
+msgid "Join a pool and get consistent XKA farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+msgstr ""
 
 #: src/components/plot/add/PlotAddNFT.tsx:133
-msgid "Join a pool and get more consistent XFX farming rewards. Create a plot NFT and assign your new plots to a group."
-msgstr "Tilslut en pulje og få stabil XFX farm belønninger. Opret en plot NFT og tildel dine nye plot filer til en gruppe."
+#~ msgid "Join a pool and get more consistent XFX farming rewards. Create a plot NFT and assign your new plots to a group."
+#~ msgstr "Tilslut en pulje og få stabil XFX farm belønninger. Opret en plot NFT og tildel dine nye plot filer til en gruppe."
+
+#: src/components/plot/add/PlotAddNFT.tsx:133
+msgid "Join a pool and get more consistent XKA farming rewards. Create a plot NFT and assign your new plots to a group."
+msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:63
 msgid "K-Size"
 msgstr "K-Størrelse"
 
-#: src/components/dashboard/DashboardSideBar.tsx:66
+#: src/electron/main.tsx:419
+msgid "Kale"
+msgstr "Kale"
+
+#: src/electron/main.tsx:358
+msgid "Kale Blockchain Wiki"
+msgstr "Kale Blockchain Wiki"
+
+#: src/components/wallet/standard/WalletStandard.tsx:647
+msgid "Kale Wallet"
+msgstr "Kale Pung"
+
+#: src/components/dashboard/DashboardSideBar.tsx:60
 msgid "Keys"
 msgstr "Nøgler"
 
@@ -1238,9 +1250,9 @@ msgstr "Ingen"
 msgid "None of your plots have passed the plot filter yet."
 msgstr "Ingen af dine plotfiler har passeret plotfilteret endnu."
 
-#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:20
 #: src/components/farm/card/FarmCardNotAvailable.tsx:23
+#: src/components/farm/FarmerStatus.tsx:20
 #: src/components/plot/PlotStatus.tsx:19
 #: src/components/plotNFT/PlotNFTCard.tsx:365
 msgid "Not Available"
@@ -1269,8 +1281,12 @@ msgid "Not found Plots"
 msgstr "Ikke fundet Plotfiler"
 
 #: src/components/farm/FarmManageFarmingRewards.tsx:184
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XFX reward for pooling plots."
-msgstr "Bemærk, at dette ikke ændrer din pulje udbetalingsadresser. Dette påvirker kun gamle plot filer af gammelt format, og 0.25XFX belønning for pulje plots."
+#~ msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XFX reward for pooling plots."
+#~ msgstr "Bemærk, at dette ikke ændrer din pulje udbetalingsadresser. Dette påvirker kun gamle plot filer af gammelt format, og 0.25XFX belønning for pulje plots."
+
+#: src/components/farm/FarmManageFarmingRewards.tsx:184
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XKA reward for pooling plots."
+msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:118
 #: src/components/plotNFT/PlotNFTCard.tsx:160
@@ -1482,7 +1498,7 @@ msgstr "Plot er en duplikat af {0}"
 msgid "PlotNFT is transitioning to (target state). This can take a while. Please do not close the application until this is finalized."
 msgstr "PlotNFT overgår til (måltilstand). Dette kan tage et stykke tid. Luk venligst ikke programmet før dette er færdigt."
 
-#: src/components/dashboard/DashboardSideBar.tsx:50
+#: src/components/dashboard/DashboardSideBar.tsx:49
 msgid "Plots"
 msgstr "Plotfiler"
 
@@ -1525,7 +1541,6 @@ msgstr "Point Fundet i de sidste 24 Timer"
 msgid "Points Successful in Last 24 Hours"
 msgstr "Point Fundet i de sidste 24 Timer"
 
-#: src/components/dashboard/DashboardSideBar.tsx:60
 #: src/components/pool/Pool.tsx:25
 msgid "Pool"
 msgstr "Pulje"
@@ -1716,8 +1731,8 @@ msgstr "Modtager Addresse"
 msgid "Recover DID wallet"
 msgstr "Gendan DID pung"
 
-#: src/components/plot/PlotHeader.tsx:78
 #: src/components/plot/overview/PlotOverviewHero.tsx:62
+#: src/components/plot/PlotHeader.tsx:78
 msgid "Refresh Plots"
 msgstr "Opdater Plotfiler"
 
@@ -1840,8 +1855,12 @@ msgid "Self Pooling"
 msgstr "Selv Pulje"
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:105
-msgid "Self pool. When you win a block you will earn XFX rewards."
-msgstr "Selvpulje. Når du vinder en blok, vil du tjene XFX belønning."
+#~ msgid "Self pool. When you win a block you will earn XFX rewards."
+#~ msgstr "Selvpulje. Når du vinder en blok, vil du tjene XFX belønning."
+
+#: src/components/plotNFT/select/PlotNFTSelectBase.tsx:105
+msgid "Self pool. When you win a block you will earn XKA rewards."
+msgstr ""
 
 #: src/components/trading/CreateOffer.jsx:164
 #: src/components/trading/TradesTable.tsx:47
@@ -1893,8 +1912,12 @@ msgid "Skips adding a final directory to harvester for farming"
 msgstr "Skipper tilføjelse af endelig mappe til harvesteren for farmning"
 
 #: src/components/pool/PoolHero.tsx:26
-msgid "Smooth out your XFX farming rewards by joining a pool."
-msgstr "Glat dine XFX belønninger ud ved at deltage i en pulje."
+#~ msgid "Smooth out your XFX farming rewards by joining a pool."
+#~ msgstr "Glat dine XFX belønninger ud ved at deltage i en pulje."
+
+#: src/components/pool/PoolHero.tsx:26
+msgid "Smooth out your XKA farming rewards by joining a pool."
+msgstr ""
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:60
 msgid "Something went wrong"
@@ -1944,8 +1967,8 @@ msgstr "Status"
 #: src/components/pool/PoolOverview.tsx:44
 #: src/components/trading/TradingOverview.jsx:128
 #: src/components/wallet/WalletHistory.tsx:55
-#: src/components/wallet/WalletStatusCard.tsx:22
 #: src/components/wallet/Wallets.tsx:118
+#: src/components/wallet/WalletStatusCard.tsx:22
 msgid "Status"
 msgstr "Status"
 
@@ -1990,8 +2013,8 @@ msgstr "Indsend"
 msgid "Synced"
 msgstr "Synkroniseret"
 
-#: src/components/farm/FarmerStatus.tsx:19
 #: src/components/farm/card/FarmCardStatus.tsx:18
+#: src/components/farm/FarmerStatus.tsx:19
 #: src/components/plot/PlotStatus.tsx:18
 #: src/components/wallet/WalletStatus.tsx:38
 msgid "Syncing"
@@ -2099,8 +2122,12 @@ msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "Det samlede transaktionsgebyr i denne blok. Belønnet til farmeren."
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:102
-msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XFX address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
-msgstr "Dette er instruktionerne for hvordan farmeren ønsker at blive betalt. Som standard vil dette være en XFX-adresse, men det kan indstilles til en vilkårlig streng med en størrelse på mindre end 1024 tegn, så det kan repræsentere en anden blockchain eller betalingssystem-id."
+#~ msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XFX address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+#~ msgstr "Dette er instruktionerne for hvordan farmeren ønsker at blive betalt. Som standard vil dette være en XFX-adresse, men det kan indstilles til en vilkårlig streng med en størrelse på mindre end 1024 tegn, så det kan repræsentere en anden blockchain eller betalingssystem-id."
+
+#: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:102
+msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XKA address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+msgstr ""
 
 #: src/components/plot/PlotsFailed.tsx:40
 msgid "These plots are invalid, you might want to delete them."
@@ -2213,13 +2240,13 @@ msgstr "Til"
 msgid "Total Balance"
 msgstr "Total Saldo"
 
-#: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:15
-#~ msgid "Total Kale Farmed"
-#~ msgstr ""
-
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:20
 msgid "Total Iterations"
 msgstr "Total iterationer"
+
+#: src/components/farm/card/FarmCardTotalKaleFarmed.tsx:15
+#~ msgid "Total Kale Farmed"
+#~ msgstr ""
 
 #: src/components/farm/card/FarmCardTotalNetworkSpace.tsx:15
 msgid "Total Network Space"
@@ -2385,12 +2412,12 @@ msgstr "Tegnebog Status:"
 #~ msgid "WalletItem.ccWallet"
 #~ msgstr ""
 
-#: src/components/wallet/Wallets.tsx:30
-#~ msgid "WalletItem.kaleWallet"
-#~ msgstr ""
-
 #: src/components/wallet/Wallets.tsx:48
 #~ msgid "WalletItem.didWallet"
+#~ msgstr ""
+
+#: src/components/wallet/Wallets.tsx:30
+#~ msgid "WalletItem.kaleWallet"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:41
@@ -2409,7 +2436,7 @@ msgstr "Tegnebog Status:"
 #~ msgid "WalletStatusCard.syncing"
 #~ msgstr ""
 
-#: src/components/dashboard/DashboardSideBar.tsx:45
+#: src/components/dashboard/DashboardSideBar.tsx:44
 #: src/components/wallet/Wallets.tsx:173
 msgid "Wallets"
 msgstr "Punge"
@@ -2561,13 +2588,13 @@ msgstr "[Fejl 13] Adgang nægtet. Du prøver at få adgang til en fil / mappe ud
 msgid "[Error 22] File not found. Most likely one of the plot folders in your config.yaml has an issue."
 msgstr "[Fejl 22] Filen blev ikke fundet. Sandsynligvis har en af plotmapperne i din config.yaml et problem."
 
-#: src/components/wallet/WalletStatusCard.tsx:41
 #: src/components/wallet/Wallets.tsx:143
+#: src/components/wallet/WalletStatusCard.tsx:41
 msgid "connections:"
 msgstr "forbindelser:"
 
-#: src/components/wallet/WalletStatusCard.tsx:33
 #: src/components/wallet/Wallets.tsx:135
+#: src/components/wallet/WalletStatusCard.tsx:33
 msgid "height:"
 msgstr "højde:"
 
@@ -2579,18 +2606,18 @@ msgstr "ikke synkroniseret"
 msgid "p2_singleton_puzzle_hash is not defined"
 msgstr "p2_singleton_puzzle_hash er ikke defineret"
 
-#: src/components/wallet/WalletStatusCard.tsx:27
 #: src/components/wallet/Wallets.tsx:123
+#: src/components/wallet/WalletStatusCard.tsx:27
 msgid "status:"
 msgstr "status:"
 
-#: src/components/wallet/WalletStatusCard.tsx:29
 #: src/components/wallet/Wallets.tsx:128
+#: src/components/wallet/WalletStatusCard.tsx:29
 msgid "synced"
 msgstr "synkroniseret"
 
-#: src/components/wallet/WalletStatusCard.tsx:29
 #: src/components/wallet/Wallets.tsx:127
+#: src/components/wallet/WalletStatusCard.tsx:29
 msgid "syncing"
 msgstr "synkroniserer"
 
@@ -2621,4 +2648,3 @@ msgstr "{currencyCode} Bruger Transaktionsgebyrer"
 #: src/components/core/components/Amount/Amount.tsx:80
 msgid "{mojo, plural, one {mojo} other {mojos}}"
 msgstr "{mojo, plural, one {mojo} other {mojos}}"
-
